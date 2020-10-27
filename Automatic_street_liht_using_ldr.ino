@@ -1,4 +1,4 @@
-int value=0;
+int val=0;
 void setup()
 {
   Serial.begin(9600);
@@ -10,18 +10,18 @@ void loop()
   
 {
   
-  value= analogRead(A0);
+  val= analogRead(A0);
   
-  if(value<10)
+  if(val<10)
   {
     digitalWrite(13, HIGH);
     Serial.println("Light ON");
-    Serial.println(value);
+    Serial.println(val);
   }
   else
   {
      digitalWrite(13, LOW);
     Serial.println("Light OFF");
-    Serial.println(value);
+    Serial.println(val);
   }
 }
